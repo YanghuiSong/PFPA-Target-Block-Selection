@@ -1,0 +1,24 @@
+# Dataset manifests and local data/model assets
+manifests/
+data/
+datasets/
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Experiment outputs and caches
+runs/
+outputs/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local machine configuration
+.env
+.env.*
+!.env.example

@@ -1,0 +1,37 @@
+{
+  "name": "PFPA target-gradient block selection",
+  "version": "0.1",
+  "input_grid": [512, 512],
+  "classes": {
+    "0": "background",
+    "1": "crop",
+    "2": "weed",
+    "255": "ignore"
+  },
+  "target_objective": {
+    "entropy_weight": 1.0,
+    "horizontal_flip_symmetric_js_weight": 0.5
+  },
+  "source_anchor_objective": "per-batch mean cross-entropy over present classes; ignore label 255; average batches",
+  "candidate_scores": {
+    "P_theta": "L2 norm of candidate block parameters",
+    "P_g": "L2 norm of target-objective gradient for candidate block",
+    "P_l": "P_theta multiplied by P_g"
+  },
+  "conflict_projection": "If the dot product of target and source-anchor gradients is negative, remove the target-gradient component along the source-anchor gradient; otherwise retain the target gradient.",
+  "update": "One gradient-descent update on one encoder transformer block, normalized to the configured relative parameter displacement; no optimizer steps.",
+  "default_relative_step": 0.001,
+  "calibration_image_cap": 128,
+  "calibration_seeds": [2027, 3407, 4096],
+  "candidate_architectures": {
+    "SegFormer-B0": {
+      "encoder_transformer_blocks": 8,
+      "evaluation": "native-label resolution in the retained historical pipeline"
+    },
+    "Swin-T + UPerNet": {
+      "encoder_transformer_blocks": 12,
+      "evaluation": "512x512 labels in the retained historical pipeline"
+    }
+  },
+  "evaluation_note": "Target-validation metrics are descriptive post-hoc utility in the retained development record; they are not used for target-gradient scoring or the parameter update."
+}

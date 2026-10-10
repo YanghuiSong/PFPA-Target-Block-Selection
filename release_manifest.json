@@ -1,0 +1,69 @@
+{
+  "package": "pfpa-target-block-selection",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 284,
+      "sha256": "87ecb98f59e09dd834672538a0c816b4dfcca47a0ee63c18ff2976f0e888c5b1"
+    },
+    {
+      "path": "CODE_ORIGIN.md",
+      "bytes": 1274,
+      "sha256": "8e4dc337cd36e915fc42605d29ece04e5c77010cb7ea43e1af2a7733c05f3505"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "089cba7867dd6b3351eb06774089254827bac5605b888c0cc93f7a0440967532"
+    },
+    {
+      "path": "MANIFEST_SCHEMA.md",
+      "bytes": 679,
+      "sha256": "ed28b7d9d7a6a4d3d97bf734c08f3c324f54a432c2ad1c702f87a1077e174c23"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 1609,
+      "sha256": "c716a9ea3a295eeda2945d9bbeacae1b41f1d2db1417b523fa37a4078b153404"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 968,
+      "sha256": "ce0a7ca3702fb6e6884db550eaab1d2ab76968d7a1b1ad0b43a0940a363054e4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5678,
+      "sha256": "489a7a6aee36ddfd60fdf01133752dd1b6306a0f9ed79d63f789e54c28ec31a4"
+    },
+    {
+      "path": "scripts/pfpa_confirmatory_runner_v2.py",
+      "bytes": 18969,
+      "sha256": "05e9d37e84384135926a53fb03ec9c241718c2ec5e54894331bdd90eedb95e19"
+    },
+    {
+      "path": "scripts/probe_function_preserving_update.py",
+      "bytes": 12563,
+      "sha256": "a08ad32f9a6fccbee7ac5d950128ba007c361bf22cd7cf006a7eddd949218066"
+    },
+    {
+      "path": "scripts/probe_transformer_block_plasticity.py",
+      "bytes": 27165,
+      "sha256": "faf6591e63950beeba302d373c0496fcb7c0dbf13fabdc2b00f6b389611c72f6"
+    },
+    {
+      "path": "scripts/run_swin_interventions.py",
+      "bytes": 16600,
+      "sha256": "e5ee3e7b910cbff7ed42ed849ca56c24c8b67aedad1e381cd06b0ba966cbeac1"
+    },
+    {
+      "path": "scripts/swin_t_model.py",
+      "bytes": 1858,
+      "sha256": "a89b8da110f127f7f64853feaa7ee3b6e6322b80e2e6b2d7f9fee5c36eaf398c"
+    }
+  ],
+  "contains_model_weights": false,
+  "contains_datasets": false,
+  "license": "MIT"
+}
